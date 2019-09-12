@@ -47,11 +47,11 @@ di dalam loop, cari anagram
 
 ["ruwah", "ruwah", "rumah"] => ["ruwah", "rumah"]
 
-cari di kamus
-anagram
+cari di kamus => string
+anagram => string
 buat kata untuk anagram
 anagram tidak ketemu
-jaro winkler
+cari di jaro winkler => listOf(String)
 
 
 fungsi untuk membuat kata acak berdasarkan index dan similar key
