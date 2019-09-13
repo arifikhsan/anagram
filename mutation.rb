@@ -33,5 +33,5 @@ possibilities.each do |possibility|
 end
 
 # puts $letters
-puts $data
+puts $data.uniq!
 puts $data.size
