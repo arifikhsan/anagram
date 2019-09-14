@@ -13,7 +13,9 @@ $match = {
     u: 'n',
 }
 
-$letters = [{
+$letters = [
+
+{
     index: 0,
     letter_key: 'm',
     letter_mask: 'w'
@@ -25,7 +27,7 @@ $letters = [{
 }
 , 
 {
-    index: 2,
+    index: 4,
     letter_key: 'u',
     letter_mask: 'n'
 }
@@ -45,6 +47,11 @@ possibilities.each do |possibility| # [true, true, true]
     end
 end
 
+mahru
+m a h r u
+0 1 2 3 4
+0 1     4     
+
 mau
 
 man
@@ -63,3 +70,10 @@ wen
 1 0 1
 1 1 0
 1 1 1
+
+1 2
+
+1 1
+1 2 
+2 1 
+2 2

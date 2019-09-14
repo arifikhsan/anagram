@@ -35,3 +35,6 @@ end
 # puts $letters
 puts $data.uniq!
 puts $data.size
+
+# [].repeated_permutation
+# [].repeated_combination
