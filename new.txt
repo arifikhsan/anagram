@@ -1,0 +1,93 @@
+mahru
+
+pengganti = {
+    a: 'e',
+    u: 'n',
+    m: 'w',
+    n: 'u'
+}
+
+mahru
+
+mau
+man
+meu
+men
+wau
+wan
+weu
+wen
+
+m a h r u
+0 1 2 3 4
+
+index 
+huruf mentah 
+huruf yang akan diubah
+
+0
+m
+w
+
+m a h r u
+
+w a h r u
+
+
+0 0 0 
+0 0 1
+0 1 0
+0 1 1
+
+1 0 0 
+1 0 1
+1 1 0
+1 1 1
+
+[
+    [0, 0, 0],
+    [0, 0, 1],
+    ...
+]
+
+0  1  4
+m  a  u
+w  e  n
+
+[
+    {
+        index: 0,
+        key: 'm',
+        mask: 'w',
+    },
+    {
+        index: 1,
+        key: 'a',
+        mask: 'w',
+    },
+    {
+        index: 4,
+        key: 'n',
+        mask: 'w',
+    },
+]
+
+
+
+mahru 
+
+
+"mahru"
+
+
+false
+{index: 0, key: 'm', mask: 'w'}
+
+
+
+
+[ "aaa", "bbb" ]
+
+[ [], [] ]
+
+

@@ -1,0 +1,79 @@
+$similar = {
+    a: 'e',
+    u: 'n',
+    m: 'w',
+    n: 'u'
+}
+
+$kata = 'mahru'
+
+$match = {
+    m: 'w',
+    a: 'e',
+    u: 'n',
+}
+
+$letters = [
+
+{
+    index: 0,
+    letter_key: 'm',
+    letter_mask: 'w'
+}, 
+{
+    index: 1,
+    letter_key: 'a',
+    letter_mask: 'e'
+}
+, 
+{
+    index: 4,
+    letter_key: 'u',
+    letter_mask: 'n'
+}
+
+]
+
+$data = []
+possibilities = [true, false].repeated_permutation($letters.size).to_a
+
+possibilities.each do |possibility| # [true, true, true]
+    kata_baru = $kata.dup
+    possibility.zip($letters).each do |is_mask, letter|
+        if is_mask
+            a = kata_baru[letter.index] = letter.letter_mask
+            $data = a
+        end
+    end
+end
+
+mahru
+m a h r u
+0 1 2 3 4
+0 1     4     
+
+mau
+
+man
+meu
+men
+wau
+wan
+weu
+wen
+
+0 0 0 
+0 0 1
+0 1 0
+0 1 1
+1 0 0 
+1 0 1
+1 1 0
+1 1 1
+
+1 2
+
+1 1
+1 2 
+2 1 
+2 2
